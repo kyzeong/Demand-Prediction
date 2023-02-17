@@ -12,11 +12,7 @@ In this project, 4 weeks sales will be predicted with various models and the per
 
 ### Assumptions
 
-Aedes mosquitoes prefer to breed in clean, stagnant water such as flower vases, flower pot plates, roof gutters, earthen jars for water storage or decorative purposes, watering cans, and bamboo pole holders. Many of the breeding sites mentioned accumulate stagnant water easily especially when there it is raining. Therefore, the breeding of Aedes mosquitoes indirectly linked to th weather. Hypothetically, we could predict the number of dengue cases with weather data.
-
-Besides weather data, we could also make use of Google trend in various search term to predict number of dengue cases. The logic behind this is people usually Google search the sypmtoms when they are suspecting they have any disease.
-
-Based on the problem statement and assumptions, we will generate regression model to predict the number of dengue cases.
+The data acquired from Kaggles consists of 2160 products and products are being supplied to 4 different warehouses. Given the nature of the data, I believe it is safe to assume that we can predict the following 4 weeks sales with times series (Arima/Sarimax) and LSTM models. Since there is no name given to each product other than the product code and category code, we assume the products in the same category should have higher correlation with each other.
 
 ---
 
@@ -42,7 +38,7 @@ The data is collected from a few sources as listed below.
 
 ### Summary
 
-
+Product 1359 has the highest order count and also ordered quantity. I take Product 1359 as my "top" product and modelling is done revolving Product 1359 in the beginning. Once we have optimized the model, we can duplicate the same model to the other products.
 
 ---
 
