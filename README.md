@@ -38,23 +38,11 @@ The data is collected from a few sources as listed below.
 
 ### Summary
 
-Product 1359 has the highest order count and also ordered quantity. I take Product 1359 as my "top" product and modelling is done revolving Product 1359 in the beginning. Once we have optimized the model, we can duplicate the same model to the other products.
+Product 1359 has the highest order count and also ordered quantity. I take Product 1359 as my "top" product and modelling is done revolving Product 1359 in the beginning. Once we have optimized the model, we can duplicate the same model to the other products. After optimizing, LSTM has better performance than SARIMAX and hence LSTM was chosen for the demand prediction of all products.
 
 ---
 
 ### Conclusion
 
-Objective of this project is achieved where the model is able to predict the number of dengue cases based on weather data and Google trend. Out of the few algorithms tested, XGBoost gives the best results in terms of accuracy and RMSE score. A cost-benefit analysis has been conducted to determine the breakeven point of pesticide spraying cost and the cost of dengue fever.
 
----
-
-### Recommendation
-
-|             Items             	| Cost (SGD) 	|
-|:-----------------------------:	|:----------:	|
-| Fumigation (every two weeks)  	| 2,778      	|
-| Treatment                     	| 112.5      	|
-| **Breakeven number of cases** 	|   **25**   	|
-
-Based on the cost-benefit analysis, it is recommended to perform pesticide spraying when the average case per fortnight is more than 25.
 
