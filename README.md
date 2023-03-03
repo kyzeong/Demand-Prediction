@@ -18,7 +18,7 @@ The data acquired from Kaggles consists of 2160 products and products are being 
 
 ### Data
 
-The data is collected from a few sources as listed below.
+The data is collected from Kaggle, link as listed below.
 
 * Forecasts for Product Demand ([source](https://www.kaggle.com/datasets/felixzhao/productdemandforecasting?select=Historical+Product+Demand.csv))
 
