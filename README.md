@@ -38,11 +38,20 @@ The data is collected from a few sources as listed below.
 
 ### Summary
 
-Product 1359 has the highest order count and also ordered quantity. I take Product 1359 as my "top" product and modelling is done revolving Product 1359 in the beginning. Once we have optimized the model, we can duplicate the same model to the other products. After optimizing, LSTM has better performance than SARIMAX and hence LSTM was chosen for the demand prediction of all products.
+First we did exploratory data analysis to the past sales history in order to pinpoint the best product for our initial modeling. The best product is defined by the top sales quantity and also order frequency. In this case, Product 1359 is the best product which meets bost the requirement of our best product criteria. Once we have defined the best product, we resample the data to weekly sales.
+
+We tried to predict with 2 different algorithms, time series and neural network. In time series, there are ARIMA and SARIMAX. SARIMAX with exogenous feature work the best in terms of lowest RMSE, followed by SARIMAX without exogenous feature and lastly ARIMA model. After trying time series, I have also tried LSTM model. Although the RMSE is slightly higher than SARIMAX with exogenous feature, it is selected as the final model because it does not require exogenous feature and can predict sales of individual product independantly.
+
+Lastly, the fine tuned LSTM model is used to predict the following 4 weeks sales of each and every product.
 
 ---
 
 ### Conclusion
 
+The model is successfully implemented and it is able to predict the following 4 weeks sales for all products.
 
+---
 
+### Recommendation
+
+An application or a dashboard can be included for further enhancement for a more user friendly interface which allows non-technical personnel to be able to generate predictions.
