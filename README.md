@@ -55,3 +55,17 @@ The model is successfully implemented and it is able to predict the following 4 
 ### Recommendation
 
 An application or a dashboard can be included for further enhancement for a more user friendly interface which allows non-technical personnel to be able to generate predictions.
+
+---
+
+### Document Flow
+
+All the coding are stored in the "Code" folder. Under the #"Code"# folder:
+1. First file is EDA
+2. Second file is baseline model and time series model
+3. Thrid file is LSTM model
+4. Fourth file is the final model and implementation
+
+Under the #"Data_Historical"# file:
+1. Historical Product Demand - the raw historical data file which we based our model on
+2. Final_Predictions - the following 4 weeks demand prediction
